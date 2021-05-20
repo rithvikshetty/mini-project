@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+Upload
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Kindly choose the file that you wish to check for Plagiarism : </h1><br>
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="inputfile">Select the file you wish to upload : </label>
+            <input type="file" name="inputfile"><br>
+            <!--
+            <label for="threshold">Enter the required percentage match :</label>
+            <input type="number" name="threshold">
+            -->
+        </div>
+        <button type="submit">Check for Plagiarism</button>
+    </form>
+</div>
+{% endblock %}

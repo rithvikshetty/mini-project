@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block title %}
+    Results
+{% endblock %}
+{% block content %}
+<body class="text-center">
+    <br>
+    <h1>Plagiarism Analysis Result :</h1>
+    <h5>Below are the top-10 documents that match your document. A total of {{ nos }} documents match your Search Results.
+    </h5>
+    <br>
+    <table class="table table-hover table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Matched Sources</th>
+                <th scope="col">Links to the document</th>
+                <th scope="col">Percentage Similarity</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for doc,perc in result %}
+            <tr>
+                <td>
+                    {{doc}}
+                </td>
+                <td>
+                    <form method="POST" action="/display_text" enctype="multipart/form-data">
+                        <button type="submit" name='docs' value="{{doc}}">{{doc}}</button>
+                    </form>
+                </td>
+                <td>
+                    {{ "{:.2f}".format(100*perc) }}%
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+{% endblock %}

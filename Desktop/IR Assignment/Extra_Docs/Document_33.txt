@@ -1,0 +1,55 @@
+From noreply.xmldatadumps@wikimedia.org Sun May  2 04:20:24 2021
+From: noreply.xmldatadumps@wikimedia.org
+To: xmldatadumps-l@lists.wikimedia.org
+Subject: [Xmldatadumps-l] XML Dumps FAQ monthly update
+Date: Sun, 02 May 2021 04:20:19 +0000
+Message-ID: <20210502042019.MKBA5%noreply.xmldatadumps@wikimedia.org>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============6778820028587498494=="
+
+--===============6778820028587498494==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+
+Greetings XML Dump users and contributors!
+
+This is your automatic monthly Dumps FAQ update email.  This update
+contains figures for the 20210401 full revision history content run.
+
+We are currently dumping 938 projects in total.
+
+
+---------------------
+Stats for zhwikiversity on date 20210401
+
+Total size of page content dump files for articles, current content only:
+43,134,248
+
+Total size of page content dump files for all pages, current content only:
+47,565,022
+
+Total size of page content dump files for all pages, all revisions:
+2,950,412,627
+---------------------
+Stats for enwiki on date 20210401
+
+Total size of page content dump files for articles, current content only:
+82,787,618,854
+
+Total size of page content dump files for all pages, current content only:
+183,015,180,891
+
+Total size of page content dump files for all pages, all revisions:
+22,543,999,212,092
+---------------------
+
+
+Sincerely,
+
+Your friendly Wikimedia Dump Info Collector
+
+
+--===============6778820028587498494==--
+
+
