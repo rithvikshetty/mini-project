@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}
+Upload
+{% endblock %}
+{% block content %}
+<div class="container">
+    <h1>Kindly choose the csv file produced by OpenFace for testing: </h1><br>
+    <form action="/process" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="inputfile">Select the file you wish to upload : </label>
+            <input type="file" name="inputfile"><br>
+            <label for="modelname">Choose the model to be used : </label>
+            <select name="modelname" id="modelname">
+                <option value="Decision Tree">Decision Tree</option>
+                <option value="Logistic Regression">Logistic Regression</option>
+            </select>
+            <!--
+            <label for="threshold">Enter the required percentage match :</label>
+            <input type="number" name="threshold">
+            -->
+        </div>
+        <button type="submit">Test</button>
+    </form>
+</div>
+{% endblock %}
